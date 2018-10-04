@@ -152,7 +152,7 @@ function showData(obj) {
 				    }
 				    ,error: function(){
 				      //请求异常回调
-				    }md
+				    }
 				  });
 				//日期
 				laydate.render({
@@ -192,6 +192,10 @@ function showData(obj) {
 				    return false;
 				});	
 		});
+		
+		
+		
+		
 		//初始化数据
 		function initData(obj) {
 			$.get("departall.do",null,function(data){

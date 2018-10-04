@@ -25,7 +25,7 @@ public class Staff {
 
     private String phone;
     
-    @DateTimeFormat(pattern="yyyy-MM-dd")
+    @DateTimeFormat(pattern="yyyy-MM-dd HH:mm:ss")
     private Date createdate;
 
     private String photo;
@@ -105,7 +105,7 @@ public class Staff {
         this.phone = phone == null ? null : phone.trim();
     }
     
-    @JsonFormat(pattern="yyyy-MM-dd hh:mm:ss", timezone="GMT+8")
+    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss", timezone="GMT+8")
     public Date getCreatedate() {
         return createdate;
     }

@@ -7,8 +7,8 @@
     <result column="type" jdbcType="VARCHAR" property="type" />
     <result column="startname" jdbcType="VARCHAR" property="startname" />
     <result column="startno" jdbcType="VARCHAR" property="startno" />
-    <result column="startdate" jdbcType="DATE" property="startdate" />
-    <result column="enddate" jdbcType="DATE" property="enddate" />
+    <result column="startdate" jdbcType="TIMESTAMP" property="startdate" />
+    <result column="enddate" jdbcType="TIMESTAMP" property="enddate" />
     <result column="days" jdbcType="INTEGER" property="days" />
     <result column="pid" jdbcType="VARCHAR" property="pid" />
     <result column="flag" jdbcType="INTEGER" property="flag" />

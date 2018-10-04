@@ -2,6 +2,8 @@ package com.edu.entity;
 
 import java.util.Date;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 public class Loginlog {
@@ -10,7 +12,8 @@ public class Loginlog {
     private String ip;
 
     private String no;
-
+    
+    @DateTimeFormat(pattern="yyyy-MM-dd HH:mm:ss")
     private Date createtime;
 
     private String location;
@@ -39,7 +42,7 @@ public class Loginlog {
         this.no = no == null ? null : no.trim();
     }
     
-    @JsonFormat(pattern="yyyy-MM-dd hh:mm:ss", timezone="GMT+8")
+    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss", timezone="GMT+8")
     public Date getCreatetime() {
     	
         return createtime;

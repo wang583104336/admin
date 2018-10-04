@@ -4,7 +4,7 @@
   <resultMap id="departMap" type="Depart">
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="name" jdbcType="VARCHAR" property="name" />
-    <result column="createtime" jdbcType="DATE" property="createtime" />
+    <result column="createtime" jdbcType="TIMESTAMP" property="createtime" />
     <result column="flag" jdbcType="INTEGER" property="flag" />
   </resultMap>
   <sql id="Base_Column_List">

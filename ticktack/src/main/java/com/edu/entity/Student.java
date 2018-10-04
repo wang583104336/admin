@@ -13,7 +13,7 @@ public class Student {
 
     private String sex;
 
-    @DateTimeFormat(pattern="yyyy-MM-dd")
+    @DateTimeFormat(pattern="yyyy-MM-dd HH:mm:ss")
     private Date birthday;
 
     private String cardno;
@@ -74,7 +74,7 @@ public class Student {
         this.sex = sex == null ? null : sex.trim();
     }
 
-    @JsonFormat(pattern="yyyy-MM-dd hh:mm:ss", timezone="GMT+8")
+    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss", timezone="GMT+8")
     public Date getBirthday() {
         return birthday;
     }

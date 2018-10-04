@@ -11,7 +11,7 @@ public class Depart {
 
     private String name;
     
-    @DateTimeFormat(pattern="yyyy-MM-dd")
+    @DateTimeFormat(pattern="yyyy-MM-dd HH:mm:ss")
     private Date createtime;
 
     private Integer flag;
@@ -34,7 +34,7 @@ public class Depart {
         this.name = name == null ? null : name.trim();
     }
     
-    @JsonFormat(pattern="yyyy-MM-dd hh:mm:ss", timezone="GMT+8")
+    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss", timezone="GMT+8")
     public Date getCreatetime() {
         return createtime;
     }

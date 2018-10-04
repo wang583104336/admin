@@ -7,8 +7,8 @@
     <result column="sno" jdbcType="VARCHAR" property="sno" />
     <result column="flag" jdbcType="INTEGER" property="flag" />
     <result column="type" jdbcType="INTEGER" property="type" />
-    <result column="createdate" jdbcType="DATE" property="createdate" />
-    <result column="enddate" jdbcType="DATE" property="enddate" />
+    <result column="createdate" jdbcType="TIMESTAMP" property="createdate" />
+    <result column="enddate" jdbcType="TIMESTAMP" property="enddate" />
   </resultMap>
   <sql id="Base_Column_List">
     id, gid, sno, flag, type, createdate, enddate

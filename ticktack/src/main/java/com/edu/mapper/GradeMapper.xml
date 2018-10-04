@@ -6,7 +6,7 @@
     <result column="name" jdbcType="VARCHAR" property="name" />
     <result column="flag" jdbcType="INTEGER" property="flag" />
     <result column="week" jdbcType="INTEGER" property="week" />
-    <result column="createdate" jdbcType="DATE" property="createdate" />
+    <result column="createdate" jdbcType="TIMESTAMP" property="createdate" />
     <result column="location" jdbcType="VARCHAR" property="location" />
     <result column="cid" jdbcType="INTEGER" property="cid" />
   </resultMap>

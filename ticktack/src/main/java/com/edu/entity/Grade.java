@@ -17,7 +17,7 @@ public class Grade {
 
     private Integer week;
     
-    @DateTimeFormat(pattern="yyyy-MM-dd")
+    @DateTimeFormat(pattern="yyyy-MM-dd HH:mm:ss")
     private Date createdate;
 
     private String location;
@@ -76,7 +76,7 @@ public class Grade {
         this.week = week;
     }
     
-    @JsonFormat(pattern="yyyy-MM-dd hh:mm:ss", timezone="GMT+8")
+    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss", timezone="GMT+8")
     public Date getCreatedate() {
         return createdate;
     }
