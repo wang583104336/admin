@@ -25,6 +25,11 @@ public class AuthorityController {
 	@Autowired
 	private IAuthorityService authService;
 	
+	
+	public static void main(String[] args) {
+		System.out.println("上传github");
+	}
+	
 	@RequestMapping("/usermenu")
 	@ResponseBody
 	public JsonBean findTitleByNo(HttpSession session) {
