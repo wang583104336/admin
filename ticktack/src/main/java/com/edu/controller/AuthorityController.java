@@ -31,6 +31,7 @@ public class AuthorityController {
 		System.out.println("上传github2");
 		System.out.println("上传github2");
 		System.out.println("上传github2");
+		System.out.println("上传github2");
 	}
 	
 	@RequestMapping("/usermenu")
