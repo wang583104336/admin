@@ -34,6 +34,7 @@ public class CourseController {
 		map.put("msg", "");
 		map.put("count", pageInfo.getCount());
 		map.put("data", pageInfo.getPageInfos());
+		System.out.println("员工阿下");
 		
 		return map;
 	}
